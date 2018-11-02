@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>登录</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #for_third_step .last-group a{margin-left:27px;}
+        #for_third_step .last-group a:first-child{color: #a0a0a0;}
+    </style>
+
+</head>
+<body>
+<div class="page-header">
+    <div class="md2018101001lty">
+        <div class="container">
+            <div class="left-nav pull-left">
+                <span>亲爱的，欢迎来到爱包包</span>
+                <a href="#">请登录</a>
+                <a href="#">免费注册</a>
+            </div>
+            <ul class="right-list pull-right clearfix">
+                <li><a href="#">我的订单</a></li>
+                <li>
+                    <a href="#">
+                        <i class="abb-icon shoppings-cart"></i>
+                        <span>购物车<i class="nums">0</i>件</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">收藏夹</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="#">
+                        <i class="abb-icon phone"></i>
+                        <span>手机版</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="page-body">
+    <div class="container top-logo-x text-center">
+        <img src="css/img/icon2018101002lty.png">
+    </div>
+    <div class="md-2018101201-xxw">
+        <div class="container md-bd">
+            <div class="md-cont" id="md_2018101601_lty">
+                <div class="text-center">
+                    <img class="icon-18101201-x" src="css/img/iconx1010_1.png">
+                </div>
+                <div style="margin-top: 120px;" class="md-2018101202-xxw font-14px">
+                    <div class="input-group">
+                        <p class="input-tit pl-20">手机号</p>
+                        <input placeholder="请输入手机号" type="text" cusrule="phone">
+                        <span class="error-msg">请输入手机号码</span>
+                    </div>
+                    <div class="input-group">
+                        <p class="input-tit pl-20">密码</p>
+                        <input placeholder="请输入密码" type="password" cusrule="pwd">
+                        <span class="error-msg">请输入6~18位的字母、数字、下划线</span>
+                    </div>
+                    <div class="form-checkbox" style="margin-top: 28px;">
+                        <label><input type="checkbox" checked="checked"><span>记住密码</span></label>
+                    </div>
+                    <div class="input-group">
+                        <input class="text-center btn-black" type="button" value="登录" id="js_login_btn">
+                    </div>
+                    <div class="input-group text-right last-group">
+                        <a class="a1" href="javascript:;" id="js_forget_pwd">忘记密码？</a>
+                        <a class="a1 js_open_reg" href="javascript:;" >免费注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-footer">
+        <div class="md2018101002lty">
+            <div class="container">
+                <div class="footer-item">
+                    <h3>专属服务</h3>
+                    <ul>
+                        <li><a href="#">免费标准配送</a></li>
+                        <li><a href="#">免费礼品包装</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>购物帮助</h3>
+                    <ul>
+                        <li><a href="#">支付相关</a></li>
+                        <li><a href="#">配送</a></li>
+                        <li><a href="#">退货</a></li>
+                        <li><a href="#">发票</a></li>
+                        <li><a href="#">保养与维修</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>关于公司</h3>
+                    <ul>
+                        <li><a href="#">关于爱包包</a></li>
+                        <li><a href="#">LOVEBAG</a></li>
+                        <li><a href="#">职业发展</a></li>
+                        <li><a href="#">细则及条款</a></li>
+                        <li><a href="#">隐私与条款</a></li>
+                        <li><a href="#">企业信息</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>关注爱包包</h3>
+                    <ul>
+                        <li><a href="#">微信</a></li>
+                        <li><a href="#">微博</a></li>
+                        <li><a href="#">优酷</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>在线顾问</h3>
+                    <ul>
+                        <li><a href="#">400.400.400</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>需要帮助</h3>
+                    <ul>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="foot-logo">
+                    <img src="css/img/icon2018101001lty.png" alt="">
+                    <p>©2018 爱包包（中国）贸易有限公司 保留所有权利</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<div style="display: none;">
+    <div class="cus-win-model bg-f5f5f5" id="md_2018101602_lty">
+        <div class="cus-win-m-cont md-2018101501-xxw font-14px">
+           <div class="md-body" id="reg_first_step">
+               <div class="cus-win-model-tit text-center ">
+                   <p class="img-bg"></p> <div class="p2">免费注册您的账户</div>
+               </div>
+               <div class="md-2018101202-xxw ">
+                   <div class="input-group ">
+                       <p class="input-tit pl-20">手机号</p>
+                       <input  placeholder="请输入11位手机号" type="text" cusrule="phone" data-cat_type="2">
+                       <span class="error-msg">请输入11位手机号</span>
+                   </div>
+                   <div class="input-group">
+                       <p class="input-tit pl-20">手机验证码</p>
+                       <input  cusrule="code" cuslength="6" data-cat_type="3" style="width: 180px; display: inline-block;vertical-align: middle;margin-right: 15px;" placeholder="请输入短信验证码" type="text">
+                       <a class="text-underline" href="#">发送验证码</a>
+                       <span class="error-msg" style="width:176px;">请输入6位验证码</span>
+                   </div>
+                   <div class="input-group">
+                       <p class="input-tit pl-20">设置密码</p>
+                       <input placeholder="请输入密码" type="password" cusrule="pwd" id="pwd_01" data-cat_type="6">
+                       <span class="error-msg">请输入6~18位的字母、数字、下划线</span>
+                   </div>
+                   <div class="input-group">
+                       <p class="input-tit pl-20">确认密码</p>
+                       <input placeholder="确认密码" type="password" cusrule="equalTo" equalTo="pwd_01" data-cat_type="6">
+                       <span class="error-msg">两次密码不一致</span>
+                   </div>
+                   <div class="form-checkbox" style="margin-top: 28px;">
+                       <label><input type="checkbox" checked="checked"><span></span>
+                           <p class="check-p">创建帐号代表您已接受爱包包的<a class="text-underline" href="#">隐私政策</a>和<a class="text-underline" href="#">销售条款</a></p></label>
+                   </div>
+                   <div class="input-group">
+                       <input class="text-center btn-black" type="button" value="创建账户" id="js_reg_btn">
+                   </div>
+               </div>
+           </div>
+           <!-- 注册成功后提示 -->
+            <div class="md-2018101501-xxw md-body hidden" id="reg_second_step">
+                <div class="cus-win-model-tit text-center">
+                    <p class="img-bg type-cat3"></p> <div class="p2">恭喜您，注册成功！</div>
+                </div>
+                <div class="text-center" style="line-height: 60px;margin-bottom: 20px;color:#b1b1b1;">
+                    你的账户ID：<span>987987546</span>
+                </div>
+                <div class="md-2018101202-xxw">
+                    <div class="input-group">
+                        <input class="text-center btn-black" type="button" value="进入主页">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="cus-win-modelclose js-closewin-btn">×</span>
+    </div>
+</div>
+<div  style="display: none;">
+    <div class="cus-win-model bg-f5f5f5" id="md_2018101603_lty">
+        <div class="cus-win-m-cont md-2018101501-xxw font-14px">
+            <div class="md-body md-pwd-model"  id="for_first_step">
+                <div class="cus-win-model-tit text-center ">
+                    <p class="img-bg  type-cat5"></p> <div class="p2">忘记密码</div>
+                </div>
+                <div class="md-2018101202-xxw ">
+                    <div class="input-group ">
+                        <p class="input-tit pl-20">手机号</p>
+                        <input  placeholder="请输入手机号" type="text" cusrule="phone" data-cat_type="2">
+                        <span class="error-msg">请输入手机号码</span>
+                    </div>
+                    <div class="input-group">
+                        <input class="text-center btn-black" type="button" value="下一步" id="js_forget_btn01">
+                    </div>
+                </div>
+            </div>
+            <div class="md-body md-pwd-model hidden" id="for_second_step">
+                <div class="cus-win-model-tit text-center">
+                    <p class="img-bg "></p> <div class="p2">重置密码</div>
+                </div>
+                <div class="md-2018101202-xxw ">
+                    <div class="input-group">
+                        <p class="input-tit pl-20">手机号码</p>
+                        <p class="input-tit pl-20" style="line-height: 20px;">手机验证码将发送至您的手机18201505555，请注意查收!</p>
+                    </div>
+                    <div class="input-group">
+                        <p class="input-tit pl-20">手机验证码</p>
+                        <input cusrule="code" cuslength="6" data-cat_type="3" style="width: 180px; display: inline-block;vertical-align: middle;margin-right: 15px;" placeholder="请输入手机验证码" type="text">
+                        <a class="text-underline" href="#">发送验证码</a>
+                        <span class="error-msg" style="width:176px;">请输入6位验证码</span>
+                    </div>
+                    <div class="input-group">
+                        <p class="input-tit pl-20">设置密码</p>
+                        <input  placeholder="请输入密码" data-cat_type="6" type="password" cusrule="pwd" id="for_pwd01">
+                        <span class="error-msg" >请输入6~18位的字母、数字、下划线</span>
+                    </div>
+                    <div class="input-group">
+                        <p class="input-tit pl-20">确认密码</p>
+                        <input  placeholder="确认密码" data-cat_type="6" type="password" cusrule="equalTo" equalTo="for_pwd01">
+                        <span class="error-msg" >两次密码不一致</span>
+                    </div>
+                    <div class="input-group">
+                        <input class="text-center btn-black" type="button" value="提交" id="js_forget_btn02">
+                    </div>
+                </div>
+            </div>
+            <div class="md-body md-pwd-model hidden" id="for_third_step">
+                <div class="cus-win-model-tit text-center">
+                    <p class="img-bg type-cat3"></p> <div class="p2">重置密码成功</div>
+                </div>
+                <p class=" text-center" style="color:#b1b1b1;padding-top: 20px;">你的密码已重置成功,请使用新的密码登录</p>
+                <div class="md-2018101202-xxw ">
+                    <div class="input-group ">
+                        <p class="input-tit pl-20">手机号码</p>
+                        <p class="input-tit pl-20">8498449495</p>
+                    </div>
+                    <div class="input-group ">
+                        <p class="input-tit pl-20">密码</p>
+                        <input  placeholder="请输入密码" type="password" cusrule="pwd" data-cat_type="6">
+                        <span class="error-msg">请输入6~18位的字母、数字、下划线</span>
+                    </div>
+                    <div class="form-checkbox" style="margin-top: 28px;">
+                        <label><input type="checkbox" checked="checked"><span>记住密码</span></label>
+                    </div>
+                    <div class="input-group">
+                        <input class="text-center btn-black" type="button" value="登录" id="js_forget_btn03">
+                    </div>
+                    <div class="input-group text-right last-group">
+                        <a class="a1" href="javascript:;" onclick="backFirstStep();">忘记密码？</a>
+                        <a class="a1 js_open_reg" href="javascript:;" >免费注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="cus-win-modelclose js-closewin-btn">×</span>
+    </div>
+</div>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/colorbox/jquery.colorbox-min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    // 回到忘记密码第一步
+    function backFirstStep(){
+        $('#for_first_step').show();
+        $('#for_third_step').hide();
+        $.colorbox.resize();//重新调整弹框大小
+    }
+    $(function(){
+        // 登录按钮
+        $('#js_login_btn').click(function(){
+            if(validateForm('md_2018101601_lty').form()){
+                alert('验证通过');
+            }
+        });
+        //打开注册弹框
+        $('.js_open_reg').click(function(){
+                $.colorbox({
+                    speed: 0,
+                    inline: true,
+                    overlayClose: false,
+                    close: false,
+                    href: "#md_2018101602_lty",
+                    onOpen:function(){
+                        console.log('打开啦');
+                    }
+                });
+            });
+            //注册-保存按钮
+            $('#js_reg_btn').click(function(){
+                if(validateForm('md_2018101602_lty').form()){
+                    alert('注册通过！');
+                    // 显示注册成功
+                    $('#reg_first_step').hide();
+                    $('#reg_second_step').show();
+                }else{
+                    $(this).closest('.md-body').find('.cus-win-model-tit>p').attr('class','img-bg type-cat4');
+                }
+            });
+            // 打开忘记密码弹框
+            $('#js_forget_pwd').click(function(){
+                $.colorbox({
+                    speed: 0,
+                    inline: true,
+                    overlayClose: false,
+                    close: false,
+                    href: "#md_2018101603_lty",
+                    onOpen:function(){
+                        console.log('打开啦');
+                    }
+                });
+            });
+            //忘记密码第一步
+             $('#js_forget_btn01').click(function(){
+                if(validateForm('for_first_step').form()){
+                    $('#for_first_step').hide();
+                    $('#for_second_step').show();
+                    $.colorbox.resize();//重新调整弹框大小
+                }else{
+                    $(this).closest('.md-body').find('.cus-win-model-tit>p').attr('class','img-bg type-cat4');
+                }
+            });
+             //忘记密码第二步
+             $('#js_forget_btn02').click(function(){
+                if(validateForm('for_second_step').form()){
+                    $('#for_second_step').hide();
+                    $('#for_third_step').show();
+                    $.colorbox.resize();
+                }else{
+                    $(this).closest('.md-body').find('.cus-win-model-tit>p').attr('class','img-bg type-cat4');
+                }
+            });
+             //忘记密码第三步
+             $('#js_forget_btn03').click(function(){
+                if(validateForm('for_third_step').form()){
+                    console.log('验证通过');
+                }else{
+                    $(this).closest('.md-body').find('.cus-win-model-tit>p').attr('class','img-bg type-cat4');
+                }
+            });
+    });
+</script>
+</body>
+</html>

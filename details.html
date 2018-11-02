@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>商品详情</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="page-header">
+    <div class="md2018101001lty">
+        <div class="container">
+            <div class="left-nav pull-left">
+                <span>亲爱的，欢迎来到爱包包</span>
+                <a href="#">请登录</a>
+                <a href="#">免费注册</a>
+            </div>
+            <ul class="right-list pull-right clearfix">
+                <li><a href="#">我的订单</a></li>
+                <li>
+                    <a href="#">
+                        <i class="abb-icon shoppings-cart"></i>
+                        <span>购物车<i class="nums">0</i>件</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">收藏夹</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="#">
+                        <i class="abb-icon phone"></i>
+                        <span>手机版</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="page-body bg-f5f5f5 md2018101003lty">
+     <!-- 分类导航 -->
+     <div class="classfiy-nav">
+        <div class="container">
+            <div class="logo text-center">
+                <img src="css/img/icon2018101002lty.png" width="203" height="72" alt="">
+            </div>
+            <!-- 搜索栏  公共模块-->
+            <div class="md-search-bar">
+                <input type="text" class="search-input" placeholder="搜索 “LV” 试试">
+                <div class="search-btn">搜索</div>
+            </div>
+            <!-- 商品分类-->
+            <div class="goods-list" id="js_dropdown_tit">
+                <i class="abb-icon mascot"></i>
+                <div class="dropdown-tit">
+                    <i class="abb-icon show"></i>
+                    <span>全部商品分类</span>
+                </div>
+                <ul class="dropdown-list hidden">
+                    <li>
+                        <a class="bags-tit" href="#" target="_blank">
+                            <i class="abb-icon female-bag"></i>
+                            <span>潮流女包</span>
+                            <i class="abb-icon more"></i>
+                        </a>
+                        <p class="bags-subtit">
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a class="bags-tit" href="#" target="_blank">
+                            <i class="abb-icon male-bag"></i>
+                            <span>绅士男包</span>
+                            <i class="abb-icon more"></i>
+                        </a>
+                        <p class="bags-subtit">
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a class="bags-tit" href="#" target="_blank">
+                            <i class="abb-icon sports-bag"></i>
+                            <span>运动旅行</span>
+                            <i class="abb-icon more"></i>
+                        </a>
+                        <p class="bags-subtit">
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a class="bags-tit" href="#" target="_blank">
+                            <i class="abb-icon other-bag"></i>
+                            <span>其他箱包</span>
+                            <i class="abb-icon more"></i>
+                        </a>
+                        <p class="bags-subtit">
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                            <a href="#" target="_blank">包包</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- 导航 -->
+            <ul class="clearfix slide-nav">
+                <li class="cur"><a href="#">首页</a></li>
+                <li><a href="#">新品</a></li>
+                <li><a href="#">真皮</a></li>
+                <li><a href="#">品牌</a></li>
+                <li><a href="#">选包</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="md-2018101601-xxw font-14px" style="padding-top:40px;">
+        <div class="md-hd clearfix container">
+            <div class="left-cont pull-left md-2018101602-xxw">
+                <div id="magnifier">
+                    <div class="small-box">
+                        <img src="images/small_1.jpg" alt="#">
+                        <span class="hover"></span>
+                    </div>
+                    <div class="thumbnail-box">
+                        <a href="javascript:;" class="btn btn-prev"></a>
+                        <a href="javascript:;" class="btn btn-next"></a>
+                        <div class="list">
+                            <ul class="wrapper">
+                                <li class="item item-cur" data-src="images/small_1.jpg"><img
+                                        src="images/thumbnail_1.jpg" alt="#"></li>
+                                <li class="item" data-src="images/small_2.jpg"><img src="images/thumbnail_2.jpg"
+                                                                                    alt="#"></li>
+                                <li class="item" data-src="images/small_3.jpg"><img src="images/thumbnail_3.jpg"
+                                                                                    alt="#"></li>
+                                <li class="item" data-src="images/small_4.jpg"><img src="images/thumbnail_4.jpg"
+                                                                                    alt="#"></li>
+                                <li class="item" data-src="images/small_5.jpg"><img src="images/thumbnail_5.jpg"
+                                                                                    alt="#"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="big-box">
+                        <img src="images/big_1.jpg" alt="#">
+                    </div>
+                </div>
+            </div>
+            <div class="right-cont pull-right md-2018101701-xxw color-b1b1b1">
+                <p class="p1">女士翻盖链条斜跨 <br>
+                    单肩包 金色亮片30H7MJ4C6</p>
+                <p class="p2">¥1699</p>
+                <div class="d1">
+                    <p class="p">月销量<span class="s1">99</span></p>
+                    <p class="p">累计评价<a class="s1" href="#">99</a></p>
+                </div>
+                <div class="d2">
+                    <p class="p">服务政策: 本商品支持7天无条件退货</p>
+                    <p class="p">服务政策: 本商品支持7天无条件退货</p>
+                    <p class="p">服务政策: 本商品支持7天无条件退货</p>
+                </div>
+                <div class="d3 clearfix">
+                    <span class="s model-xxw pull-left">型号</span>
+                    <div id="detail_type" class="d pull-left">
+                        <span class="curs active">神马水电费854*55</span>
+                        <span class="curs">神马水电费854*55</span>
+                    </div>
+                </div>
+                <div class="d3 clearfix">
+                    <span class="s pull-left">数量</span>
+                    <div class="d pull-left wrap-input">
+                        <input onkeyup="replaceNumber(this)" type="text" value="1"/>
+                        <span class="js-cl-val up"></span>
+                        <span class="js-cl-val"></span>
+                    </div>
+                </div>
+                <div class="d4">
+                    <a class="btn" href="#">加入购物车</a>
+                    <a class="btn" href="#">立即购买</a>
+                </div>
+                <div class="d5">
+                    本商品由爱包包直接发货并提供售后服务，您在购买过程中有任何疑问可咨询爱包包客服。
+                </div>
+            </div>
+        </div>
+        <div class="md-2018101702-xxw container">
+            <div class="hd">
+                <ul>
+                    <li class="on">商品信息</li>
+                    <li>商品详情</li>
+                    <li>商品实拍</li>
+                    <li>累计评价<span class="color-ff0036">885</span></li>
+                </ul>
+
+            </div>
+            <div class="bd">
+                <div class="item-list-xxw">
+                    <div class="cont-xxw md-2018101806-xxw">
+                        <div class="md-hd detail-title-xxw">
+                            <div class="dd">
+                                <p class="text-center">商品信息</p>
+                            </div>
+                        </div>
+                        <div class="md-bd">
+                            <div class="detail-info clearfix">
+                                <div class="left-cont pull-left">
+                                    <div class="clearfix detail-info-list">
+                                        <div class="p1">商品名称：</div>
+                                        <div class="p2">翻盖链条斜跨单肩包金色</div>
+                                    </div>
+                                    <div class="clearfix detail-info-list">
+                                        <div class="p1">商品型号：</div>
+                                        <div class="p2">金色亮片，18*14*7(701954870)</div>
+                                    </div>
+                                    <div class="clearfix detail-info-list">
+                                        <div class="p1">品　　牌：</div>
+                                        <div class="p2">金色亮片，18*14*7(701954870)</div>
+                                    </div>
+                                    <div class="clearfix detail-info-list">
+                                        <div class="p1">分　　类：</div>
+                                        <div class="p2">金色亮片，18*14*7(701954870)</div>
+                                    </div>
+                                    <div class="clearfix detail-info-list">
+                                        <div class="p1">生产地区：</div>
+                                        <div class="p2">金色亮片，18*14*7(701954870)</div>
+                                    </div>
+                                    <div class="clearfix detail-info-list">
+                                        <div class="p1">适用人群：</div>
+                                        <div class="p2">金色亮片，18*14*7(701954870)</div>
+                                    </div>
+                                    <div class="clearfix detail-info-list">
+                                        <div class="p1">保质期限：</div>
+                                        <div class="p2">金色亮片，18*14*7(701954870)</div>
+                                    </div>
+                                    <div class="clearfix detail-info-list">
+                                        <div class="p1">特别说明：</div>
+                                        <div class="p2">金色亮片，18*14*7(701954870)金色亮片，18*14*7(701954870)金色亮片，18*14*7(701954870)金色亮片，18*14*7(701954870)金色亮片，18*14*7(701954870)金色亮片，18*14*7(701954870)金色亮片，18*14*7(701954870)金色亮片，18*14*7(701954870)金色亮片，18*14*7(701954870)</div>
+                                    </div>
+                                </div>
+                                <div class="right-cont pull-left">
+                                    <img src="images/bags-example-02.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-list-xxw text-center">
+                    <img src="images/img_big_x1.jpg">
+                </div>
+                <div class="item-list-xxw text-center">
+                    <img src="images/img_big_x2.jpg">
+                </div>
+                <div class="item-list-xxw">
+                    <div class="cont-xxw md-2018101703-xxw">
+                        <div class="md-hd padding-80px">
+                            <div class="d1 clearfix">
+                                <div class="left-cont pull-left">
+                                    <p class="font-16px p1">与描述相符</p>
+                                    <p class="p2">4.5</p>
+                                </div>
+                                <div class="right-cont pull-right">
+                                    <ul class="pj-box clearfix">
+                                        <li>非常不满</li>
+                                        <li>不满意</li>
+                                        <li>一般满意</li>
+                                        <li>非常满意</li>
+                                    </ul>
+                                    <div class="jd-box">
+                                        <p class="p1" style="width:740px "></p>
+                                        <p class="p2"><span>4.5</span>分</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-checkbox d2" style="margin-top:30px;">
+                                <label><input type="checkbox" checked="checked"><span>全部</span></label>
+                                <label><input type="checkbox" checked="checked"><span>追评（999）</span></label>
+                                <label><input type="checkbox" checked="checked"><span>图片（999）</span></label>
+                            </div>
+                        </div>
+                        <div class="comment-box-xxw">
+                            <div class="comment-item padding-80px clearfix">
+                                <div class="left-cont pull-left">
+                                    <div class="d1">
+                                        经过仔细筛选对比，该家店铺信誉度高最终选择了该家宝贝，收到后仔细查看皮质优良光泽度高
+                                        颜色纯正，做工精良，的确是真皮，手感柔软，包包背带结实好看，内部做工很细致，是不错的宝贝，
+                                        值得推荐给大家！ 店家服务热情周到，值得信赖！
+                                    </div>
+                                    <div class="d2 color-b1b1b1">88:99</div>
+                                    <div class="d3">
+                                        解释：为您的选择而开怀，因您的认可而愉悦。亲的满意就是我们的最高追求，我们将一如既往地努力做到更好！
+                                        感谢您的支持信赖，期待您的再次光临。【爱包包】 祝您生活愉快
+                                    </div>
+                                </div>
+                                <div class="right-cont pull-right">
+                                    <div class="d1">
+                                        <div class="p1">颜色分类： <span class="color-b1b1b1">金色</span></div>
+                                        <div class="p1 color-b1b1b1"> 879879879(匿名) <span class="color-d5ae76">超级会员</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-item padding-80px clearfix">
+                                <div class="left-cont pull-left">
+                                    <div class="d1">
+                                        经过仔细筛选对比，该家店铺信誉度高最终选择了该家宝贝，收到后仔细查看皮质优良光泽度高
+                                        颜色纯正，做工精良，的确是真皮，手感柔软，包包背带结实好看，内部做工很细致，是不错的宝贝，
+                                        值得推荐给大家！ 店家服务热情周到，值得信赖！
+                                    </div>
+                                    <div class="d2 color-b1b1b1">88:99</div>
+                                    <div class="d3">
+                                        解释：为您的选择而开怀，因您的认可而愉悦。亲的满意就是我们的最高追求，我们将一如既往地努力做到更好！
+                                        感谢您的支持信赖，期待您的再次光临。【爱包包】 祝您生活愉快
+                                    </div>
+                                </div>
+                                <div class="right-cont pull-right">
+                                    <div class="d1">
+                                        <div class="p1">颜色分类： <span class="color-b1b1b1">金色</span></div>
+                                        <div class="p1 color-b1b1b1"> 879879879(匿名) <span class="color-d5ae76">超级会员</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-item padding-80px clearfix">
+                                <div class="left-cont pull-left">
+                                    <div class="d1">
+                                        经过仔细筛选对比，该家店铺信誉度高最终选择了该家宝贝，收到后仔细查看皮质优良光泽度高
+                                        颜色纯正，做工精良，的确是真皮，手感柔软，包包背带结实好看，内部做工很细致，是不错的宝贝，
+                                        值得推荐给大家！ 店家服务热情周到，值得信赖！
+                                    </div>
+                                    <div class="d2 color-b1b1b1">88:99</div>
+                                    <div class="d3">
+                                        解释：为您的选择而开怀，因您的认可而愉悦。亲的满意就是我们的最高追求，我们将一如既往地努力做到更好！
+                                        感谢您的支持信赖，期待您的再次光临。【爱包包】 祝您生活愉快
+                                    </div>
+                                </div>
+                                <div class="right-cont pull-right">
+                                    <div class="d1">
+                                        <div class="p1">颜色分类： <span class="color-b1b1b1">金色</span></div>
+                                        <div class="p1 color-b1b1b1"> 879879879(匿名) <span class="color-d5ae76">超级会员</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-item padding-80px clearfix">
+                                <div class="left-cont pull-left">
+                                    <div class="d1">
+                                        经过仔细筛选对比，该家店铺信誉度高最终选择了该家宝贝，收到后仔细查看皮质优良光泽度高
+                                        颜色纯正，做工精良，的确是真皮，手感柔软，包包背带结实好看，内部做工很细致，是不错的宝贝，
+                                        值得推荐给大家！ 店家服务热情周到，值得信赖！
+                                    </div>
+                                    <div class="d2 color-b1b1b1">88:99</div>
+                                    <div class="d3">
+                                        解释：为您的选择而开怀，因您的认可而愉悦。亲的满意就是我们的最高追求，我们将一如既往地努力做到更好！
+                                        感谢您的支持信赖，期待您的再次光临。【爱包包】 祝您生活愉快
+                                    </div>
+                                    <div class="d4">
+                                        <div class="img-list clearfix">
+                                            <img src="images/bags-example-02.jpg">
+                                            <img src="images/bags-example-02.jpg">
+                                            <img src="images/bags-example-02.jpg">
+                                            <img src="images/bags-example-02.jpg">
+                                        </div>
+                                        <div class="d3">
+                                            解释：为您的选择而开怀，因您的认可而愉悦。亲的满意就是我们的最高追求，我们将一如既往地努力做到更好！
+                                            感谢您的支持信赖，期待您的再次光临。【爱包包】 祝您生活愉快
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-cont pull-right">
+                                    <div class="d1">
+                                        <div class="p1">颜色分类： <span class="color-b1b1b1">金色</span></div>
+                                        <div class="p1 color-b1b1b1"> 879879879(匿名) <span class="color-d5ae76">超级会员</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-item padding-80px clearfix">
+                                <div class="left-cont pull-left">
+                                    <div class="d1">
+                                        经过仔细筛选对比，该家店铺信誉度高最终选择了该家宝贝，收到后仔细查看皮质优良光泽度高
+                                        颜色纯正，做工精良，的确是真皮，手感柔软，包包背带结实好看，内部做工很细致，是不错的宝贝，
+                                        值得推荐给大家！ 店家服务热情周到，值得信赖！
+                                    </div>
+                                    <div class="d2 color-b1b1b1">88:99</div>
+                                    <div class="d3">
+                                        解释：为您的选择而开怀，因您的认可而愉悦。亲的满意就是我们的最高追求，我们将一如既往地努力做到更好！
+                                        感谢您的支持信赖，期待您的再次光临。【爱包包】 祝您生活愉快
+                                    </div>
+                                    <div class="d4">
+                                        <div class="img-list clearfix">
+                                            <img src="images/bags-example-02.jpg">
+                                            <img src="images/bags-example-02.jpg">
+                                            <img src="images/bags-example-02.jpg">
+                                            <img src="images/bags-example-02.jpg">
+                                        </div>
+                                        <div class="d3">
+                                            解释：为您的选择而开怀，因您的认可而愉悦。亲的满意就是我们的最高追求，我们将一如既往地努力做到更好！
+                                            感谢您的支持信赖，期待您的再次光临。【爱包包】 祝您生活愉快
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-cont pull-right">
+                                    <div class="d1">
+                                        <div class="p1">颜色分类： <span class="color-b1b1b1">金色</span></div>
+                                        <div class="p1 color-b1b1b1"> 879879879(匿名) <span class="color-d5ae76">超级会员</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination-box ">
+                            <div class="pagination-xxw text-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-footer">
+    <div class="md2018101002lty">
+        <div class="container">
+            <div class="footer-item">
+                <h3>专属服务</h3>
+                <ul>
+                    <li><a href="#">免费标准配送</a></li>
+                    <li><a href="#">免费礼品包装</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>购物帮助</h3>
+                <ul>
+                    <li><a href="#">支付相关</a></li>
+                    <li><a href="#">配送</a></li>
+                    <li><a href="#">退货</a></li>
+                    <li><a href="#">发票</a></li>
+                    <li><a href="#">保养与维修</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>关于公司</h3>
+                <ul>
+                    <li><a href="#">关于爱包包</a></li>
+                    <li><a href="#">LOVEBAG</a></li>
+                    <li><a href="#">职业发展</a></li>
+                    <li><a href="#">细则及条款</a></li>
+                    <li><a href="#">隐私与条款</a></li>
+                    <li><a href="#">企业信息</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>关注爱包包</h3>
+                <ul>
+                    <li><a href="#">微信</a></li>
+                    <li><a href="#">微博</a></li>
+                    <li><a href="#">优酷</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>在线顾问</h3>
+                <ul>
+                    <li><a href="#">400.400.400</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>需要帮助</h3>
+                <ul>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">常见问题</a></li>
+                </ul>
+            </div>
+            <div class="foot-logo">
+                <img src="css/img/icon2018101001lty.png" alt="">
+                <p>©2018 爱包包（中国）贸易有限公司 保留所有权利</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.pagination.js"></script>
+
+<script src="js/jquery.SuperSlide.2.1.2.js"></script>
+
+<script src="js/magnifier.js"></script>
+<script src="js/main.js"></script>
+<script>
+    function replaceNumber(t) {
+        /*   if (t.value.length == 1) {
+               t.value = t.value.replace(/[^1-9]/g, '')
+           } else {
+               t.value = t.value.replace(/\D/g, '')
+           }*/
+        setInterval(function () {
+            if (t.value.length == 1) {
+                t.value = t.value.replace(/[^1-9]/g, '')
+            } else if (t.value.length < 1) {
+                t.value = 1
+            } else {
+                t.value = t.value.replace(/\D/g, '')
+            }
+        }, 500)
+    }
+
+    $(function () {
+        $('#detail_type').on('click','.curs',function(){
+           if(!$(this).hasClass('active')){
+               $(this).addClass('active').siblings().removeClass('active')
+           }
+        });
+
+
+        $('.pagination-xxw').pagination({
+            prevContent:'<<上一页',
+            nextContent:'下一页>>'
+        });
+
+        $('#magnifier').magnifier();
+        $('.js-cl-val').click(function () {
+            var t_ = $(this),
+                input = t_.siblings('input');
+            var val = Number(input.val());
+            if (t_.hasClass('up')) {
+                input.val(val + 1)
+            } else {
+                if (val > 1) {
+                    input.val(val - 1)
+                }
+            }
+        });
+        $('.md-2018101702-xxw').slide({delayTime: 0});
+
+    })
+</script>
+</body>
+
+</html>
